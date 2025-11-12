@@ -148,6 +148,19 @@
                 <!-- <div class="info-card-body">Niste prijavljeni</div> -->
             </div>
         </aside>
-        <div class="add-news-popup hidden"></div>
+        <div class="add-news-popup-backdrop hidden"></div>
+        <div class="add-news-popup hidden">
+            <h2>Vnos novic</h2>
+            <label for="news-title">Naslov:</label>
+            <input id="news-title" type="text" placeholder="vnesite naslov novice">
+
+            <label for="news-description">Besedilo:</label>
+            <textarea id="news-description" placeholder="vnesite beselido novice"></textarea>
+
+            <label for="news-file">Slika:</label>
+            <input id="news-file" type="file" accept=".png, .jpg, .jpeg, .gif, .wepg, .tif, .tiff, .bmp">
+
+            <button type="submit">Shrani</button>
+        </div>  
     </body>
 </html>

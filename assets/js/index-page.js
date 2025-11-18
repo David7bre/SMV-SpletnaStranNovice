@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     popup = document.querySelector('.add-news-popup')
     backdrop = document.querySelector('.add-news-popup-backdrop')
 
-    document.querySelector('.add-news').addEventListener('click', togglePopup)
+    document.querySelectorAll('.add-news, .submit-btn').forEach(btn => {
+        btn.addEventListener('click', togglePopup)
+    })
 
     document.querySelector('.add-news-popup-backdrop').addEventListener('click', () => {
         if (!popup.classList.contains('hidden')) togglePopup()

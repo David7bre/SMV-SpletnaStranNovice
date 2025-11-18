@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta title="Državno tekmovanje v računalništvu">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/statistics.css">
+        <link rel="stylesheet" href="./assets/css/components.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="./assets/js/index-page.js"></script>
+    </head>
+    <body id="main-layout">
+        <header class="header">
+            <h2>
+                Državno tekmovanje v računalništvu
+                <small>Ravne na koroškem, 21.3.2017</small>
+            </h2>
+            <img src="https://www.iconarchive.com/download/i10301/everaldo/desktoon/Computer.ico" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Novice</a>
+                    </li>
+                    <li>
+                        <a class="add-news">Vnos novic</a>
+                    </li>
+                    <li>
+                        <a href="">Statistika</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./login.html">Prijava</a>
+                    </li>
+                    <li>
+                        <a href="./signup.html">Registracija</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="left">
+            <h2>Statistika</h2>
+            <div>
+                <div>
+                    <h3>Uporabniki z največ objavami</h3>
+                    <div class="line"></div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Uporabnik</th>
+                                <th>Število objav</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kranjski Janez</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Markovič Marko</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Novak Maja</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h3>Zadnjih 5 prijav</h3>
+                    <div class="line"></div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Uporabnik</th>
+                                <th>Datum</th>
+                                <th>Ura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Markovič Marko</td>
+                                <td>04.01.2017</td>
+                                <td>18:24:16</td>
+                            </tr>
+                            <tr>
+                                <td>Kranjski Janez</td>
+                                <td>04.01.2017</td>
+                                <td>18:19:26</td>
+                            </tr>
+                            <tr>
+                                <td>Novak Maja</td>
+                                <td>03.01.2017</td>
+                                <td>12:59:40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div class="spacer">
+        </div>
+        <aside class="right">
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-user"></i>
+                    Status prijave
+                </div>
+                <div class="info-card-body">
+                    <span>Niste prijavljeni</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-cloud"></i>
+                    Ravne na Koroškem
+                </div>
+                <div class="info-card-body weather">
+                    <span>Torek, 11.11.2025 ob 11.45</span>
+                    <span class="temp">-6.2 °C</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-pencil"></i>
+                    Viri novic
+                </div>
+            </div>
+        </aside>
+        <div class="add-news-popup-backdrop hidden"></div>
+        <div class="add-news-popup hidden">
+            <h2>Vnos novic</h2>
+            <label for="news-title">Naslov:</label>
+            <input id="news-title" type="text" placeholder="vnesite naslov novice">
+
+            <label for="news-description">Besedilo:</label>
+            <textarea id="news-description" placeholder="vnesite beselido novice"></textarea>
+
+            <label for="news-file-div">Slika: </label>
+            <div class="file-input-container">
+                <div id="news-file-div"></div>
+                <button type="button" onclick="document.querySelector('submit-btn')">Prebrskaj...</button>
+                <input  id="news-file" type="file" accept=".png, .jpg, .jpeg, .gif, .wepg, .tif, .tiff, .bmp">
+            </div>
+
+            <button class="submit-btn" type="submit">Shrani</button>
+        </div>  
+    </body>
+</html>

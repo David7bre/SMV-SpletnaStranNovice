@@ -20,5 +20,9 @@
     pointer-events: none !important;
 }
 
+.left {
+    grid-area: left-col;
+}
+
 
 

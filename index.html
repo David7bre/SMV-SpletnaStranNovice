@@ -5,6 +5,7 @@
         <meta title="Državno tekmovanje v računalništvu">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/components.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <script src="./assets/js/index-page.js"></script>
     </head>
@@ -24,15 +25,15 @@
                         <a class="add-news">Vnos novic</a>
                     </li>
                     <li>
-                        <a href="">Statistika</a>
+                        <a href="./statistics.html">Statistika</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a href="">Prijava</a>
+                        <a href="./login.html">Prijava</a>
                     </li>
                     <li>
-                        <a href="">Registracija</a>
+                        <a href="./signup.html">Registracija</a>
                     </li>
                 </ul>
             </nav>
@@ -145,7 +146,6 @@
                     <i class="fa-solid fa-pencil"></i>
                     Viri novic
                 </div>
-                <!-- <div class="info-card-body">Niste prijavljeni</div> -->
             </div>
         </aside>
         <div class="add-news-popup-backdrop hidden"></div>
@@ -157,10 +157,14 @@
             <label for="news-description">Besedilo:</label>
             <textarea id="news-description" placeholder="vnesite beselido novice"></textarea>
 
-            <label for="news-file">Slika:</label>
-            <input id="news-file" type="file" accept=".png, .jpg, .jpeg, .gif, .wepg, .tif, .tiff, .bmp">
+            <label for="news-file-div">Slika: </label>
+            <div class="file-input-container">
+                <div id="news-file-div"></div>
+                <button type="button" onclick="document.querySelector('submit-btn')">Prebrskaj...</button>
+                <input  id="news-file" type="file" accept=".png, .jpg, .jpeg, .gif, .wepg, .tif, .tiff, .bmp">
+            </div>
 
-            <button type="submit">Shrani</button>
+            <button class="submit-btn" type="submit">Shrani</button>
         </div>  
     </body>
 </html>

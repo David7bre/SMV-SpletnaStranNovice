@@ -1,0 +1,49 @@
+.left {
+    h2 {
+        margin: 0 0 10px;
+        font-weight: 100;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+            h3 {
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+
+            div {
+                height: 1px;
+                width: 100%;
+                background-color: #E2E2E2;
+            }
+        
+            table {
+                border-collapse: collapse;
+                border-color: #EDEDED;
+    
+                thead {
+                    border-bottom: 2px solid #E2E2E2;
+                }
+    
+                th, td {
+                    box-sizing: border-box;
+                    padding: 4px 8px;
+                }
+    
+                th {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

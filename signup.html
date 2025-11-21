@@ -2,9 +2,26 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta title="Registracija">
+        <meta title="Prijava">
         <link rel="stylesheet" href="./assets/css/auth.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
+        <div class="auth-container">
+            <form action="">
+                <h2>Registracija</h2>
+                <label for="auth-name">Ime:</label>
+                <input type="text" id="auth-name" placeholder="vnesite ime" required>
+                <label for="auth-surname">Priimek:</label>
+                <input type="text" id="auth-surname" placeholder="vnesite priimek" required>
+                <label for="auth-username">Uporabniško ime:</label>
+                <input type="text" id="auth-username" placeholder="vnesite uporabniško ime" required>
+                <label for="auth-password">Geslo:</label>
+                <input type="text" id="auth-password" placeholder="vnesite geslo" required>
+                <label for="auth-password-repeat">Ponovitev Gesla:</label>
+                <input type="text" id="auth-password-repeat" placeholder="ponovno vnesite geslo" required>
+                <button type="submit" onclick="window.location.replace('./index.html');">Registracija</button>
+            </form>
+        </div>
     </body>
 </html>

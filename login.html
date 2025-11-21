@@ -4,8 +4,18 @@
         <meta charset="UTF-8">
         <meta title="Prijava">
         <link rel="stylesheet" href="./assets/css/auth.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
-        
+        <div class="auth-container">
+            <form action="">
+                <h2>Prijava</h2>
+                <label for="auth-name">Uporabniško ime:</label>
+                <input type="text" id="auth-name" placeholder="vnesite uporabniško ime" required>
+                <label for="auth-password">Geslo:</label>
+                <input type="text" id="auth-password" placeholder="vnesite geslo" required>
+                <button type="submit" onclick="window.location.replace('./index.html');">Prijava</button>
+            </form>
+        </div>
     </body>
 </html>

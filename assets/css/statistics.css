@@ -5,10 +5,8 @@
     }
 
     div {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
+        display: grid;
+        grid-template-columns: 5fr 7fr;
         gap: 20px;
 
         div {
